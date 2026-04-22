@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+#OriWidth {
+    border: 1px;
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+:root {
+    --bg: #000000;
+    --text: #ffffff;
+}

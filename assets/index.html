@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Wheel Calculator</title>
+    </head>
+    <body>
+        <main>
+            <aside id="main-menu">
+                <div id="OriWheelPar"; style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
+                    <header>Original Size Parameters</header>
+                    <label for="OriWidth">Wheel Width (inch)</label>
+                    <input type="number" id="OriWidth" name="OriWidth">
+                    <button id="btn-calc">Calculate</button>
+                </div>
+            </aside>
+        </main>
+        <script>
+            const btnCalc = document.getElementById('btn-calc');
+            const OriWidthNUMB = document.getElementById('OriWidth');
+
+            btnCalc.addEventListener('click', function() {
+                const OriWidthSize = OriWidthNUMB.value;
+                pywebview.api.read_parameters(OriWidthSize);
+            })
+        </script>
+    </body>
+</html>
